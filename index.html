@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> SPACES || CUSTOMER PORTAL </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="dashboard-space">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <a href="#"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" class="nav-link">
+                                <p><span><img src="images/dashboard-icon.svg" alt="" /></span> Dashboard</p>
+                            </a></li>
+                        <li><a href="#" class="nav-link active">
+                                <p><span><img src="images/court-hire-icon.svg" alt="" /></span> Court Hire</p> <img
+                                    src="images/down-arrow.svg" alt="" />
+                            </a>
+                            <div class="submenu">
+                                <ol>
+                                    <li><a href="index.html" class="active">Tennis</a></li>
+                                    <li><a href="/soccer.html">Soccer</a></li>
+                                    <li><a href="#">Basketball</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-link">
+                                <p><span><img src="images/events-icon.svg" alt="" /></span> Events </p> <img
+                                    src="images/down-arrow.svg" alt="" />
+                            </a>
+                            <div class="submenu">
+                                <ol>
+                                    <li><a href="index.html" class="active">Tennis Classes</a></li>
+                                    <li><a href="#">Swim Classes</a></li>
+                                    <li><a href="#">Sport Theory </a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-link">
+                                <p><span><img src="images/teams-icon.svg" alt="" /></span> Teams </p> <img
+                                    src="images/down-arrow.svg" alt="" />
+                            </a>
+                            <div class="submenu">
+                                <ol>
+                                    <li><a href="index.html" class="active">Join a Team</a></li>
+                                    <li><a href="#">Create a Team</a></li>
+                                    <li><a href="#">Manage Team</a></li>
+                                    <li><a href="#">Fixtures & Results</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="logout">
+                        <a href="#"><img src="images/logout-icon.svg" alt="" /></a>
+                    </div>
+                    <div class="profile">
+                        <a href="#"><img src="images/profile-icon.svg" alt="" />Profile</a>
+                    </div>
+                    <div class="intrac-logo">
+                        <a href="#"><img src="images/intrac-logo.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="header">
+                    <div class="info-main">
+                        <a href="#"><img src="images/mbl-logo.png" alt=""></a>
+                    <a href="#" class="hamburger-main" id="hamburger">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    </a>
+                    <a href="#" class="cross" id="cross"><img src="images/cross.svg" alt="" ></a>
+                    <div class="header-left">
+                        <ul>
+                            <li>
+                                <div class="relative">
+                                    <input type="text" id="basicDate" class="form-control"
+                                        placeholder="Please select Date" data-input>
+                                    <span class="arrow-icon"><img src="images/down-arrow.svg" alt="" /></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="relative">
+                                    <select class="form-control form-caringbah">
+                                        <option>Caringbah</option>
+                                    </select>
+                                    <span class="arrow-icon"><img src="images/down-arrow.svg" alt="" /></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="header-right">
+                        <div class="slide-btn d-none">
+                            <ul>
+                                <li><a href="#"><img src="images/left-arrow.svg" alt="" /></a></li>
+                                <li><a href="#"><img src="images/right-arrow.svg" alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="help-link">Help</a>
+                    </div>
+                </div>
+                <div class="mbl-calender-main">
+                    <h4>Tennis</h4>
+                  <ul class="example">
+                    <li><a href="#" class="active-bg-gray"><span>M</span><small>24</small></a></li>
+                    <li><a href="#" class="bg-active"><span>T</span><small>25</small></a></li>
+                    <li><a href="#"><span>W</span><small>26</small></a></li>
+                    <li><a href="#"><span>T</span><small>27</small></a></li>
+                    <li><a href="#"><span>F</span><small>28</small></a></li>
+                    <li><a href="#"><span>S</span><small>29</small></a></li>
+                    <li><a href="#" class="active-bg-gray calender-last" id="basicDate2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27" fill="none">
+                        <path d="M23.6797 11H1.17969M17.4297 1V6M7.42969 1V6M10.5547 16L12.4297 14.75V21M10.8672 21H13.9922M7.17969 26H17.6797C19.7799 26 20.83 26 21.6322 25.5913C22.3378 25.2318 22.9114 24.6581 23.271 23.9525C23.6797 23.1503 23.6797 22.1002 23.6797 20V9.5C23.6797 7.3998 23.6797 6.34971 23.271 5.54754C22.9114 4.84193 22.3378 4.26825 21.6322 3.90873C20.83 3.5 19.7799 3.5 17.6797 3.5H7.17969C5.07949 3.5 4.02939 3.5 3.22722 3.90873C2.52162 4.26825 1.94794 4.84193 1.58841 5.54754C1.17969 6.34971 1.17969 7.3998 1.17969 9.5V20C1.17969 22.1002 1.17969 23.1503 1.58841 23.9525C1.94794 24.6581 2.52162 25.2318 3.22722 25.5913C4.02939 26 5.07949 26 7.17969 26Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a></li>
+                  </ul>
+                </div>
+                <div class="mbl-show">
+                    <div class="relative">
+                        <select class="form-control form-caringbah">
+                            <option>Caringbah</option>
+                        </select>
+                        <span class="arrow-icon"><img src="images/down-arrow.svg" alt="" /></span>
+                    </div>
+                    <a href="#" class="help-link">Help</a>
+                </div>
+                <div class="space-inner space-inner-after">
+                    <div class="space-box scroll-container example" id="scroll-container">
+                        <div class="space-detail scroll-content example">
+                            <div class="space-time">
+                                <ul>
+                                    <li>Time</li>
+                                    <li>8 AM</li>
+                                    <li>9 AM</li>
+                                    <li>10 AM</li>
+                                    <li>11 AM</li>
+                                    <li>12 PM</li>
+                                    <li>1 PM</li>
+                                    <li>2 PM</li>
+                                    <li>3 PM</li>
+                                    <li>4 PM</li>
+                                    <li>5 PM </li>
+                                    <li>6 PM </li>
+                                </ul>
+                            </div>
+                            <div class="space-section">
+                                <div class="space-section-top">
+                                    <ul>
+                                        <li><span>Section A</span></li>
+                                        <li><span>Section B</span></li>
+                                        <li><span>Section C</span></li>
+                                        <li><span>Section D</span></li>
+                                    </ul>
+                                    <span class="tenis-span">Tennis Court 1</span>
+                                </div>
+                                <div class="space-section-bottom">
+                                    <ul>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                        <li class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-court"> 
+                                <div class="space-court-inner">
+                                    <div class="space-court-top">
+                                        <ul>
+                                            <li><span>Tennis 2</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="space-section-bottom">
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box blocked">
+                                            <div class="section-box-inner">
+                                                <strong>Booked</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-court-inner">
+                                    <div class="space-court-top">
+                                        <ul>
+                                            <li><span>Tennis Court 3</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="space-section-bottom">
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box blocked">
+                                            <div class="section-box-inner">
+                                                <strong>Booked</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box blocked">
+                                            <div class="section-box-inner">
+                                                <strong>Booked</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-court-inner">
+                                    <div class="space-court-top">
+                                        <ul>
+                                            <li><span>Tennis Court 4</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="space-section-bottom">
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box blocked">
+                                            <div class="section-box-inner">
+                                                <strong>Booked</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box blocked">
+                                            <div class="section-box-inner">
+                                                <strong>Booked</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-box">
+                                            <div class="section-box-inner">
+                                                <strong>Tennis Court</strong>
+                                                <p>1 – 1:30pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+@media (min-width: 1200px) {
+
+}
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1300px) {}
+@media (max-width: 1199px) {}
+@media (max-width: 991px)  {
+    .scroll-content {
+        width: 820px;
+    }
+    .dashboard-space {
+        padding: 20px;
+        gap: 15px;
+    }
+    .space2-container {
+        width: 1540px;
+    }
+    .flatpickr-input {
+        width: 180px;
+    }
+}
+@media (max-width: 767px)  {
+    .sidebar {
+        position: fixed;
+        z-index: 999;
+        height: calc(100% - 40px);
+        left: 50%;
+        max-width: 94%;
+        padding-top: 80px;
+        transform:translateX(-200%);
+    }
+    .sidebar.active{
+        transform:translateX(-50%);
+    }
+    .content-right {
+        max-width: 100%;
+    }
+    .space-section {
+        max-width: 330px;
+        width: 100%;
+    }
+    .space-court {
+        width: calc(100% - 377px);
+    }
+    .scroll-content {
+        width: 750px;
+    }
+    .hamburger-main{
+        display: block;
+    }
+        .info-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    .header-left{
+        margin-left: 20px;
+    }
+    .space2-container {
+        width: 1160px;
+    }
+    .slide-btn-main{
+        right: -5px;
+    }
+    .flatpickr-input {
+        width: 130px;
+    }
+    /* for calender mbl  */
+    .mbl-calender-main{
+        display: block;
+    }
+    .header-left,
+    .header-right{
+        display: none;
+    }
+    .header{
+        background: #15171C;
+        border-radius: 20px;
+        justify-content: right;
+        padding-bottom: 0;
+        padding: 20px;
+    }
+    .header{
+        height: 86px;
+    }
+    .form-control.form-caringbah{
+        width: 190px;
+        height: auto;
+        margin-right: 10px;
+        height: 48px;
+    }
+    .mbl-show{
+        display: flex;
+        align-items: center;
+        padding: 14px 0;
+    }
+    .help-link{
+        width: 100%;
+        max-width: 190px;
+        height: 48px;
+    }
+    .arrow-icon {
+        right: 95px;
+    }
+    .sidebar-header{
+        display: none;
+    }
+    .info-main{
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar {
+        height: calc(100% - 146px);
+        overflow-y: auto;
+    }
+    .sidebar-bottom{
+        padding-top: 13px;
+    }
+}
+@media (max-width: 575px)  {
+    .form-control{
+        height: 40px;
+    }
+    .header-left ul {
+        gap: 8px;
+    }
+    .flatpickr-input{
+        width: 140px;
+    }
+    .flatpickr-input {
+        width: 130px;
+    }
+    .slide-btn-resp{
+        display: none;
+    }
+    .mbl-calender-main ul {
+        overflow-x: auto;
+    }
+}
+@media (max-width: 374px)  {}
