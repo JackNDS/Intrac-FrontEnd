@@ -26,13 +26,15 @@
         position: fixed;
         z-index: 999;
         height: calc(100% - 40px);
-        left: 50%;
-        max-width: 94%;
+        left: 2%;
+        max-width: 96%;
+        /* left: 4%;
+        max-width: 94%; */
         padding-top: 80px;
-        transform:translateX(-200%);
+        transform: translateY(-200%);
     }
-    .sidebar.active{
-        transform:translateX(-50%);
+    .sidebar.active {
+        transform: translateY(0);
     }
     .content-right {
         max-width: 100%;

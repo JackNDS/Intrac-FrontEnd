@@ -14,6 +14,12 @@ $("#basicDate").flatpickr({
   $( ".section-box" ).on( "click", function() {
     $(this).addClass( "active" );
   } );
+  $( ".section-box2" ).on( "click", function() {
+    $(this).addClass( "active2" );
+  } ); 
+   $( ".section-box2green" ).on( "click", function() {
+    $(this).addClass( "active3" );
+  } );
 
   const scrollContainer = document.getElementById('scroll-container');
 
